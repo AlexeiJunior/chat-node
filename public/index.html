@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Socket</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="cliente.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col col-sm-12 alert alert-secondary">
+          <div id="textarea" style="overflow: auto; max-height: 600px; height: 400px;"></div>
+          <div id="feedback"></div>
+          <div class="form-row">
+            <div class="col col-2">
+                <input type="name" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="col col-8">
+                <input type="text" class="form-control" id="text" placeholder="Type your message here..">
+            </div>
+            <div class="col col-2">
+                <button type="button" class="btn btn-primary" id="btn">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
